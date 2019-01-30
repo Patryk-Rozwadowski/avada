@@ -1,5 +1,13 @@
-header { background: #fff url("https://images.pexels.com/photos/159832/justice-law-case-hearing-159832.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 0/cover; }
+body { width: 100%; height: 100%; }
 
-header .header__title { font-size: 4em; }
+nav { width: 1000px; display: inline; }
 
-header .header__slogan { font-size: 3em; }
+header { width: 100vw; height: 100vh; background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 0/cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+
+header .header__container { width: 1200px; height: 500px; }
+
+header .header__title { font-size: 4em; font-family: "Roboto", sans-serif; color: #222; }
+
+header .header__slogan { font-size: 3em; color: #fff; }
+
+header * { border: 1px solid red; }
