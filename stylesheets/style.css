@@ -1,13 +1,17 @@
+html { overflow-x: hidden; box-sizing: border-box; list-style: none; }
+
+html a { text-decoration: none; }
+
 body { width: 100%; height: 100%; }
 
-nav { width: 1000px; display: inline; }
+nav { position: absolute; top: 0; width: 100%; }
 
-header { width: 100vw; height: 100vh; background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 0/cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+nav .navbar { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; }
 
-header .header__container { width: 1200px; height: 500px; }
+header { width: 100vw; height: 100vh; background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 100% 10%/cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: end; align-items: flex-end; }
 
-header .header__title { font-size: 4em; font-family: "Roboto", sans-serif; color: #222; }
+header .header__container { width: 1000px; height: 350px; background-color: #222; }
 
-header .header__slogan { font-size: 3em; color: #fff; }
+header .header__title { font-size: 4em; font-family: "Roboto", sans-serif; color: #e2dbd5; margin: 40px 20px; }
 
-header * { border: 1px solid red; }
+header .header__slogan { font-size: 3em; color: #e2dbd5; font-family: 'Roboto', sans-serif; font-style: italic; margin: 20px; }
