@@ -1,0 +1,14 @@
+@mixin size($width, $height: $width) {
+  $width: width;
+  $height: height;
+}
+header {
+@include size(100vw, 100vh);
+background: #fff url("https://images.pexels.com/photos/159832/justice-law-case-hearing-159832.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 0/cover;
+  .header__title {
+  font-size:4em;
+  }
+  .header__slogan {
+  font-size:3em;
+  }
+}
