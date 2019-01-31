@@ -6,8 +6,8 @@ $header-background-color: #222;
   font-size:2em;
 }
 @mixin header-font{
-  font-family: 'Roboto', sans-serif; ;
-  color: #e2dbd5
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
 }
 @mixin size($width, $height: $width) {
   width: $width;
@@ -24,8 +24,10 @@ body {
 nav {
   position:absolute;
   top:0;
-  width:100%;
+  border:1px solid #222;
   .navbar {
+    @include size(100vw, 150px);
+    background-color:#fff;
     display:flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -33,18 +35,28 @@ nav {
   li {
     @include nav-font;
     margin:50px;
+    &:first-child {
+      position:absolute;
+      left:30px;
+      top:0;
+    }
   }
 }
 header {
-  @include size(100vw, 100vh);
-  background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 100% 10%/cover;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
+  @include size(100vw, 85vh);
   .header__container {
+    @include size(100vw, 100%);
+    background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 100% 30%/cover;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top:150px;
+  }
+  .header__slogan-container {
     @include size(55vw, 400px);
     background-color:$header-background-color;
+    margin-top:-auto150px;
     }
   .header__title {
     @include header-font;
@@ -78,4 +90,8 @@ header {
 }
 a {
   text-decoration: none;
+  color: #222;
+}
+* {
+  border:1px solid red;
 }
