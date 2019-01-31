@@ -6,9 +6,13 @@ nav { position: absolute; top: 0; border: 1px solid #222; }
 
 nav .navbar { width: 100vw; height: 150px; background-color: #fff; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; }
 
-nav li { font-family: 'Lato', sans-serif; color: #222; font-size: 2em; margin: 50px; }
+nav li { font-family: 'Lato', sans-serif; color: #222; font-size: 2em; margin: 50px 30px; }
+
+nav li:last-child { margin-right: 50px; }
 
 nav li:first-child { position: absolute; left: 30px; top: 0; }
+
+nav li a { font-size: 1em; }
 
 header { width: 100vw; height: 85vh; }
 
@@ -16,13 +20,17 @@ header .header__container { width: 100vw; height: 100%; background: #fff url("ht
 
 header .header__slogan-container { width: 55vw; height: 400px; background-color: #222; margin-top: -auto150px; }
 
-header .header__title { font-family: 'Roboto', sans-serif; color: #fff; font-size: 4em; margin: 50px 20px; }
+header .header__title { font-family: 'Roboto', sans-serif; color: #fff; font-size: 4em; margin: 50px; }
 
-header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 3em; font-style: italic; margin: 20px; }
+header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 3em; font-style: italic; margin: 40px; }
 
-@media only screen and (max-width: 1300px) { header .header__container { width: 45vw; height: 390px; background-color: #222; }
+@media only screen and (max-width: 1300px) { nav li { margin: 50px 15px; }
+  nav li:last-child { margin-right: 20px; }
+  nav li:first-child { position: absolute; left: 20px; top: 0; }
+  nav li a { font-size: 0.6em; }
+  header .header__slogan-container { width: 45vw; height: 390px; background-color: #222; }
   header .header__title { font-family: 'Roboto', sans-serif; color: #fff; font-size: 3em; margin: 30px; }
-  header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 2em; } }
+  header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 2em; margin: 30px; } }
 
 a { text-decoration: none; color: #222; }
 

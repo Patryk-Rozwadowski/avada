@@ -34,11 +34,17 @@ nav {
   }
   li {
     @include nav-font;
-    margin:50px;
+    margin:50px 30px;
+    &:last-child {
+      margin-right:50px;
+    }
     &:first-child {
       position:absolute;
       left:30px;
       top:0;
+    }
+    a{
+      font-size:1em;
     }
   }
 }
@@ -61,19 +67,35 @@ header {
   .header__title {
     @include header-font;
     font-size:4em;
-    margin:50px 20px;
+    margin:50px;
   }
   .header__slogan {
     @include header-font;
     font-size:3em;
     font-style: italic;
-    margin:20px;
+    margin:40px;
   }
 }
 
 @media only screen and (max-width : 1300px) {
+  nav {
+    li {
+      margin:50px 15px;
+      &:last-child {
+        margin-right:20px;
+      }
+      &:first-child {
+        position:absolute;
+        left:20px;
+        top:0;
+      }
+      a {
+        font-size:0.6em;
+      }
+    }
+  }
   header {
-    .header__container {
+    .header__slogan-container {
       @include size(45vw, 390px);
       background-color:$header-background-color;
       }
@@ -85,6 +107,7 @@ header {
     .header__slogan {
       @include header-font;
       font-size:2em;
+      margin:30px
     }
   }
 }
