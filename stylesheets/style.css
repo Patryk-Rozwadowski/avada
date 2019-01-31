@@ -1,16 +1,18 @@
 html { overflow-x: hidden; box-sizing: border-box; list-style: none; }
 
+.row { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; }
+
 body { width: 100%; height: 100%; }
 
-nav { position: absolute; top: 0; border: 1px solid #222; }
+nav { position: absolute; top: 0; border-bottom: 3px; border-color: #55a098; border-style: solid; box-shadow: 1px 1px 10px #222; }
 
-nav .navbar { width: 100vw; height: 150px; background-color: #fff; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; }
+nav .navbar { width: 100vw; height: 146px; background-color: #fff; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; }
 
 nav li { font-family: 'Lato', sans-serif; color: #222; font-size: 2em; margin: 50px 30px; }
 
 nav li:last-child { margin-right: 50px; }
 
-nav li:first-child { position: absolute; left: 30px; top: 0; }
+nav li:first-child { position: absolute; left: 50px; top: 0; }
 
 nav li a { font-size: 1em; }
 
@@ -18,13 +20,25 @@ header { width: 100vw; height: 85vh; }
 
 header .header__container { width: 100vw; height: 100%; background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 100% 30%/cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: end; align-items: flex-end; margin-top: 150px; }
 
-header .header__slogan-container { width: 55vw; height: 400px; background-color: #222; margin-top: -auto150px; }
+header .header__slogan-container { width: 55vw; height: 400px; background-color: #222; margin-top: -auto150px; border-radius: 10px; }
 
 header .header__title { font-family: 'Roboto', sans-serif; color: #fff; font-size: 4em; margin: 50px; }
 
 header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 3em; font-style: italic; margin: 40px; }
 
-@media only screen and (max-width: 1300px) { nav li { margin: 50px 15px; }
+.about-us { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; margin: 100px 300px; text-align: center; }
+
+.about-us .row { border-top: 5px solid #55a098; }
+
+.about-us .about-us__col-4 { width: 33%; height: 250px; border: 1px solid #e2e2e2; }
+
+.about-us .about-us__title { font-family: 'Roboto', sans-serif; color: #222; margin: 30px auto; font-size: 1.5em; }
+
+.about-us .about-us__description { font-family: 'Open Sans', sans-serif; color: #222; margin: 0 auto; width: 90%; font-weight: normal; }
+
+.about-us .about-us__button { margin: 50px; }
+
+@media only screen and (max-width: 1350px) { nav li { margin: 50px 15px; }
   nav li:last-child { margin-right: 20px; }
   nav li:first-child { position: absolute; left: 20px; top: 0; }
   nav li a { font-size: 0.6em; }
@@ -33,5 +47,3 @@ header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-si
   header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 2em; margin: 30px; } }
 
 a { text-decoration: none; color: #222; }
-
-* { border: 1px solid red; }
