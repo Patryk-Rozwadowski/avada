@@ -1,6 +1,10 @@
 $font-white: #fff;
 $header-background-color: #222;
-$header-font: 'Roboto', sans-serif;
+
+@mixin header-font{
+  font-family: 'Roboto', sans-serif; ;
+  color: #e2dbd5
+}
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;
@@ -25,9 +29,6 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
   }
-  li {
-
-  }
 }
 header {
   @include size(100vw, 100vh);
@@ -37,22 +38,35 @@ header {
   justify-content: center;
   align-items: flex-end;
   .header__container {
-    @include size(800px, 350px);
+    @include size(55vw, 400px);
     background-color:$header-background-color;
-  }
+    }
   .header__title {
-    font-size:3em;
-    font-family: $header-font;
-    color:#e2dbd5;
-    margin:40px 20px;
+    @include header-font;
+    font-size:4em;
+    margin:50px 20px;
   }
   .header__slogan {
-    font-size:2em;
-    color:#e2dbd5;
-    font-family: 'Roboto', sans-serif;
+    @include header-font;
+    font-size:3em;
     font-style: italic;
     margin:20px;
   }
 }
-
-@media
+@media only screen and (max-width : 1300px) {
+  header {
+    .header__container {
+      @include size(45vw, 390px);
+      background-color:$header-background-color;
+      }
+    .header__title {
+      @include header-font;
+      font-size:3em;
+      margin:30px;
+    }
+    .header__slogan {
+      @include header-font;
+      font-size:2em;
+    }
+  }
+}

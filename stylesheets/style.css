@@ -10,8 +10,12 @@ nav .navbar { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex
 
 header { width: 100vw; height: 100vh; background: #fff url("https://i.imgur.com/CysZ9qI.jpg") 100% 10%/cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: end; align-items: flex-end; }
 
-header .header__container { width: 1000px; height: 350px; background-color: #222; }
+header .header__container { width: 55vw; height: 400px; background-color: #222; }
 
-header .header__title { font-size: 4em; font-family: "Roboto", sans-serif; color: #e2dbd5; margin: 40px 20px; }
+header .header__title { font-family: 'Roboto', sans-serif; color: #e2dbd5; font-size: 4em; margin: 50px 20px; }
 
-header .header__slogan { font-size: 3em; color: #e2dbd5; font-family: 'Roboto', sans-serif; font-style: italic; margin: 20px; }
+header .header__slogan { font-family: 'Roboto', sans-serif; color: #e2dbd5; font-size: 3em; font-style: italic; margin: 20px; }
+
+@media only screen and (max-width: 1300px) { header .header__container { width: 45vw; height: 390px; background-color: #222; }
+  header .header__title { font-family: 'Roboto', sans-serif; color: #e2dbd5; font-size: 3em; margin: 30px; }
+  header .header__slogan { font-family: 'Roboto', sans-serif; color: #e2dbd5; font-size: 2em; } }
