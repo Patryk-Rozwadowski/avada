@@ -109,10 +109,7 @@ header {
   @include flex-center;
   margin:100px 200px;
   text-align: center;
-  .row {
-    border-top:5px solid #55a098;
-  }
-  .about-us__col-4 {
+  .about-us__col {
     @include size(33%, 250px);
     border:1px solid #e2e2e2;
   }
@@ -216,12 +213,15 @@ header {
     }
   }
   .about-us {
+    padding-bottom:100px;
     .row {
-      display:block;
-      width:100%;
+        @include flex-center;
+        flex-direction: column;
     }
-    .col-12-xs {
-      width:100%;
+    .about-us__col {
+      @include size(100%)
+      margin-top:100px;
+      background-color:#fff;
     }
   }
 }
