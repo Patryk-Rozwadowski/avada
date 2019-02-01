@@ -8,7 +8,7 @@ nav { position: absolute; top: 0; border-bottom: 3px; border-color: #55a098; bor
 
 nav .navbar { width: 100vw; height: 146px; background-color: #fff; display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: end; justify-content: flex-end; }
 
-nav li { font-family: 'Lato', sans-serif; color: #222; font-size: 2em; margin: 50px 30px; }
+nav li { font-family: 'Lato', sans-serif; color: #222; font-size: 1.5em; margin: 50px 30px; }
 
 nav li:last-child { margin-right: 50px; }
 
@@ -36,14 +36,21 @@ header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-si
 
 .about-us .about-us__description { font-family: 'Open Sans', sans-serif; color: #222; margin: 0 auto; width: 90%; font-weight: normal; }
 
-.about-us .about-us__button { margin: 50px; }
+.about-us .about-us__button { font-family: 'Roboto', sans-serif; color: #fff; margin: 40px; }
 
 @media only screen and (max-width: 1350px) { nav li { margin: 50px 15px; }
   nav li:last-child { margin-right: 20px; }
   nav li:first-child { position: absolute; left: 20px; top: 0; }
-  nav li a { font-size: 0.6em; }
+  nav li a { font-size: 0.8em; }
+  nav li a:hover { color: #55a098; text-decoration: none; }
   header .header__slogan-container { width: 45vw; height: 390px; background-color: #222; }
   header .header__title { font-family: 'Roboto', sans-serif; color: #fff; font-size: 3em; margin: 30px; }
   header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-size: 2em; margin: 30px; } }
+
+@media only screen and (max-width: 731px) { nav .navbar { width: 100vw; height: 100vh; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; text-align: center; }
+  nav .navbar li { border-bottom: 2px solid #222; padding: 5px; border-radius: 5px; margin: 30px 15px; }
+  nav .navbar li:last-child { margin-right: 0; }
+  nav .navbar li:first-child { position: absolute; left: calc(50% - 110px); top: 35px; border: 0; }
+  nav .navbar li a { font-size: 1em; } }
 
 a { text-decoration: none; color: #222; }
