@@ -134,6 +134,20 @@ header {
     margin:40px;
   }
 }
+.question {
+  @include size(100%, 200px);
+  @include flex-center;
+  background: linear-gradient(to right, rgb(80, 160, 152), rgb(85, 140, 142));
+  .question__title {
+    @include header-font;
+    font-size:2em;
+    margin-right:50px;
+    }
+    .btn {
+      @include size(150px, 50px);
+      font-family: 'Roboto', sans-serif;
+  }
+}
 @media only screen and (max-width : 1100px) {
   nav {
     li {
@@ -180,6 +194,21 @@ header {
     margin-top:0;
     .about-us__col {
       width:30%;
+    }
+  }
+  .question {
+    text-align: center;
+    background: linear-gradient(to right, rgb(80, 160, 152), rgb(85, 140, 142));
+    padding:0 30px;
+    .question__title {
+      @include header-font;
+      font-size:2em;
+      margin-right:50px;
+      }
+      .btn {
+        @include size(150px, 70px);
+        font-family: 'Roboto', sans-serif;
+        margin-right:50px;
     }
   }
 }
@@ -242,6 +271,9 @@ header {
     .header__slogan-container {
       @include size(75vw, 180px);
     }
+  }
+  .question .question__title{
+    font-size:1.5em;
   }
 }
 a {
