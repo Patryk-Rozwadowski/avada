@@ -50,6 +50,28 @@ header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-si
 
 .slogan .slogan__seperator { width: 200px; height: 1; border: 1px solid #222; margin-top: 20px; }
 
+.secretary { width: 100vw; height: 500px; }
+
+.secretary .row { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; width: 100%; height: 500px; }
+
+.secretary .secretary__title { font-family: 'Roboto', sans-serif; color: #222; font-size: 2em; text-align: center; }
+
+.secretary__ourpeople-list--1 { background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image1.jpg") 0/cover; }
+
+.secretary__ourpeople-list--2 { background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image2.jpg") 0/cover; }
+
+.secretary__ourpeople-list--3 { background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image3.jpg") 0/cover; }
+
+.secretary__ourpeople-list--4 { background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image4.jpg") 0/cover; }
+
+.secretary__ourpeople-list--5 { background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image5.jpg") 0/cover; }
+
+.secretary__ourpeople-list--6 { background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image6.jpg") 0/cover; }
+
+[class*="secretary__ourpeople-list--"] { position: relative; border: 1px solid #222; width: 12em; height: 12em; margin: 50px; border-radius: 50%; }
+
+[class*="secretary__ourpeople-list__name"] { font-family: 'Open Sans', sans-serif; color: #222; position: absolute; left: 6em; font-size: 1em; bottom: -20px; }
+
 @media only screen and (max-width: 1100px) { nav li { margin: 50px 15px; }
   nav li:last-child { margin-right: 15px; }
   nav li:first-child { position: absolute; left: 15px; top: 0; }

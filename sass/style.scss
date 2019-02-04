@@ -1,4 +1,13 @@
 $font-white: #fff;
+
+
+
+
+@mixin secretary__ourpeople-list--1 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image1.jpg") 0/cover;
+  width:50%;
+}
+
 @mixin nav-font {
   font-family: 'Lato', sans-serif;
   color:#222;
@@ -9,15 +18,15 @@ $font-white: #fff;
   justify-content:center;
   align-items: center;
 }
-@mixin header-font{
+@mixin title-white{
   font-family: 'Roboto', sans-serif;
   color: #fff;
 }
-@mixin about-us__title {
+@mixin title-black {
   font-family: 'Roboto', sans-serif;
   color: #222;
 }
-@mixin about-us__description {
+@mixin primary-black {
   font-family: 'Open Sans', sans-serif;
   color: #222;
 }
@@ -93,12 +102,12 @@ header {
     border-radius:10px;
     }
   .header__title {
-    @include header-font;
+    @include title-white;
     font-size:4em;
     margin:50px;
   }
   .header__slogan {
-    @include header-font;
+    @include title-white;
     font-size:3em;
     font-style: italic;
     margin:40px;
@@ -118,19 +127,19 @@ header {
     background-color:#fff;
     border:1px solid #e2e2e2;
   }
-  .about-us__title {
-    @include about-us__title;
+  .about-us__title{
+    @include title-black;
     margin:30px auto;
     font-size: 1.5em;
   }
   .about-us__description {
-    @include about-us__description;
+    @include primary-black;
     margin:0 auto;
     width:90%;
     font-weight: normal;
   }
   .about-us__button {
-    @include header-font;
+    @include title-white;
     margin:40px;
   }
 }
@@ -139,7 +148,7 @@ header {
   @include flex-center;
   background: linear-gradient(to right, rgb(80, 160, 152), rgb(85, 140, 142));
   .question__title {
-    @include header-font;
+    @include title-white;
     font-size:2em;
     margin-right:50px;
     }
@@ -154,7 +163,7 @@ header {
   flex-direction: column;
   background: url("https://zapodaj.net/images/2a3551157779b.jpg") fixed 0/cover;
   .slogan__title {
-    @include header-font;
+    @include title-white;
     color:#222;
     font-size:2em;
   }
@@ -163,6 +172,51 @@ header {
     border:1px solid #222;
     margin-top:20px;
   }
+}
+.secretary {
+  @include size(100vw, 500px);
+  .row {
+    @include flex-center;
+    @include size(100%, 500px);
+  }
+  .secretary__title {
+    @include title-black;
+    font-size:2em;
+    text-align: center;
+  }
+}
+.secretary__ourpeople-list--1 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image1.jpg") 0/cover;
+}
+.secretary__ourpeople-list--2 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image2.jpg") 0/cover;
+}
+.secretary__ourpeople-list--3 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image3.jpg") 0/cover;
+}
+.secretary__ourpeople-list--4 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image4.jpg") 0/cover;
+}
+.secretary__ourpeople-list--5 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image5.jpg") 0/cover;
+}
+.secretary__ourpeople-list--6 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image6.jpg") 0/cover;
+}
+[class*="secretary__ourpeople-list--"] {
+  position:relative;
+  border:1px solid #222;
+  @include size(12em);
+  margin:50px;
+  border-radius:50%;
+}
+[class*="secretary__ourpeople-list__name"] {
+  @include primary-black;
+  position:absolute;
+  left:6em;
+  font-size:1em;
+  bottom:-20px;
+
 }
 @media only screen and (max-width : 1100px) {
   nav {
@@ -195,12 +249,12 @@ header {
       background-color:rgba(34, 34, 34, 0.8);
       }
     .header__title {
-      @include header-font;
+      @include title-white;
       font-size:2.2em;
       margin:30px;
     }
     .header__slogan {
-      @include header-font;
+      @include title-white;
       font-size:1.3em;
       margin:30px
     }
@@ -217,7 +271,7 @@ header {
     background: linear-gradient(to right, rgb(80, 160, 152), rgb(85, 140, 142));
     padding:0 30px;
     .question__title {
-      @include header-font;
+      @include title-white;
       font-size:2em;
       margin-right:50px;
       }
