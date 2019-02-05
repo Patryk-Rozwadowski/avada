@@ -50,8 +50,6 @@ header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-si
 
 .slogan .slogan__seperator { width: 200px; height: 1; border: 1px solid #222; margin-top: 20px; }
 
-.secretary { width: 100vw; height: 500px; }
-
 .secretary .row { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
 .secretary .secretary__title { font-family: 'Roboto', sans-serif; color: #222; font-size: 2em; margin: 50px; text-align: center; }
@@ -80,7 +78,15 @@ header .header__slogan { font-family: 'Roboto', sans-serif; color: #fff; font-si
 
 [class*="secretary__areas-list--"] { width: 25em; height: 25em; font-family: 'Roboto', sans-serif; color: #fff; position: relative; }
 
-.secretary__areas_title { text-align: center; position: absolute; font-size: 4em; bottom: 0; left: 50%; transform: translate(-50%, 0); }
+.secretary__areas_title { text-align: center; position: absolute; font-size: 4em; bottom: 10px; left: 50%; transform: translate(-50%, 0); }
+
+.opinion__background { background: url("https://zapodaj.net/images/b2d668e1bc931.jpg") 0/cover; margin-top: 50px; width: 100vw; height: 400px; }
+
+.opinion__background .opinion__quote__container { width: 100%; height: 400px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; align-items: center; text-align: center; }
+
+.opinion__background .opinion__quote__container .opinion__quote { width: 70%; height: 100px; font-family: 'Open Sans', sans-serif; color: #fff; font-size: 1.5em; }
+
+.opinion__background .opinion__logo { width: 150px; height: 30px; background: url("https://www.ariton.pl/wp-content/uploads/2015/02/envato-logo.png") 0/cover; }
 
 @media only screen and (max-width: 1100px) { nav li { margin: 50px 15px; }
   nav li:last-child { margin-right: 15px; }
