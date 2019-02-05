@@ -177,7 +177,6 @@ header {
   @include size(100vw, 500px);
   .row {
     @include flex-center;
-    @include size(100%, 500px);
   }
   .secretary__title {
     @include title-black;
@@ -221,6 +220,28 @@ header {
   font-size:1.5em;
   bottom:-60px;
 
+}
+.secretary__areas-list--1 {
+  background: url("https://images.pexels.com/photos/959816/pexels-photo-959816.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 0/cover;
+}
+.secretary__areas-list--2 {
+  background: url("https://images.pexels.com/photos/1437866/pexels-photo-1437866.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 0/cover;
+}
+.secretary__areas-list--3 {
+  background: url("https://images.pexels.com/photos/684385/pexels-photo-684385.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260") 0/cover;
+}
+[class*="secretary__areas-list--"] {
+  @include size(25em);
+  @include title-white;
+  position:relative;
+}
+.secretary__areas_title {
+  text-align: center;
+  position:absolute;
+  font-size:4em;
+  bottom:0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 @media only screen and (max-width : 1100px) {
   nav {
