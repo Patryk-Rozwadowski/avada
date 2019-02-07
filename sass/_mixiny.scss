@@ -1,0 +1,40 @@
+@mixin secretary__ourpeople-list--1 {
+  background: url("https://www.ariton.pl/wp-content/uploads/2015/07/column1-image1.jpg") 0/cover;
+  width:50%;
+}
+
+@mixin nav-font {
+  font-family: 'Lato', sans-serif;
+  color:#222;
+  font-size:1.5em;
+}
+@mixin flex-center {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+@mixin title-white{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+@mixin title-black {
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+@mixin primary-black {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+}
+@mixin primary-white {
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+@mixin flex-center {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
