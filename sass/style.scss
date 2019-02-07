@@ -246,26 +246,41 @@ header {
   left: 50%;
   transform: translate(-50%, 0);
 }
-.opinion__background {
-  background: url("https://zapodaj.net/images/b2d668e1bc931.jpg") 0/cover;
+.more__about__container {
+  @include size(100%, 300px);
+  background: url("https://zapodaj.net/images/7b539cc54ea99.jpg")fixed 0/cover;
   margin-top:50px;
-  @include size(100vw, 400px);
 
-  .opinion__quote__container {
-    @include size(100%, 400px);
-    @include flex-center;
-    align-items: center;
-    text-align: center;
+  .col-4 {
+    width:33%;
+    margin:50px auto;
 
-    .opinion__quote {
-      @include size(70%, 100px);
+    .contact__title {
+      text-align: center;
+      @include title-white;
+      font-size: 1.5em;
+      margin:10px;
+    }
+    .contact {
+      text-align: center;
+      margin:10px;
       @include primary-white;
       font-size:1.5em;
+      .fab {
+        color:#4267b2;
+        font-size: 2em;
+      }
     }
   }
-  .opinion__logo {
-    @include size(150px,30px);
-      background: url("https://www.ariton.pl/wp-content/uploads/2015/02/envato-logo.png") 0/cover;
+  .more__about {
+    .more__about__title {
+      @include title-white;
+      font-size:1.5em;
+      margin-bottom:10px;
+    }
+    .more__about__descritpion {
+      @include primary-white;
+    }
   }
 }
 @media only screen and (max-width : 1100px) {
