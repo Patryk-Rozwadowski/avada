@@ -130,7 +130,7 @@ header {
     font-size:2em;
   }
   .slogan__seperator {
-    @include size(200px,1);
+    @include size(200px,1px);
     border:1px solid #222;
     margin-top:20px;
   }
@@ -194,6 +194,7 @@ header {
 [class*="secretary__areas-list--"] {
   @include size(25em);
   @include title-white;
+  margin:20px;
   position:relative;
 }
 .secretary__areas_title {
@@ -241,18 +242,6 @@ header {
         margin-top:40px;
         margin-bottom:10px;
       }
-    }
-  }
-
-  .more__about {
-    .more__about__title {
-      @include title-white;
-      font-size:1.5em;
-      margin-bottom:10px;
-    }
-
-    .more__about__descritpion {
-      @include primary-white;
     }
   }
 }
